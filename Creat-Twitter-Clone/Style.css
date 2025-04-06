@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+
+    margin: 0;
+
+    background-color: black;
+}
+
+/* ---------------------------------------------------------- */
+.side-bar,
+.search-box {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    /* background-color: red; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    /* background-color: rgb(0, 255, 47); */
+}
+
+.search-box {
+
+    justify-content: flex-start;
+
+
+}
+
+/* --------------------------------------------------------- */
+.side-bar-container,
+.search-box-contoiner {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+
+
+    padding: 0px 12px;
+    /* background-color: aqua; */
+}
+
+.search-box-contoiner {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 40px;
+    /* background-color: aqua; */
+}
+
+.search-box-contoiner>input[type="text"] {
+
+    border-radius: 24px;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+
+    background-color: #1F2427;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 100%;
+
+    padding: 4px 0;
+
+    margin: 4px;
+
+    /* background-color: rgb(0, 170, 255); */
+}
+
+.group:hover {
+    background-color: grey;
+    cursor: pointer;
+
+}
+
+.nav-menu>.group>span {
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+
+    padding: 12px;
+    border-radius: 58px;
+}
+
+.tweet-btn {
+    height: 52px;
+    width: 225px;
+
+    margin: 16px 0;
+
+    border-radius: 52px;
+    border: none;
+
+    background-color: #2A9DEE;
+    color: whitesmoke;
+}
+
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* background-color: aqua; */
+}
+
+.profile {
+    height: 64px;
+    width: 100%;
+
+    border-radius: 64px;
+
+    margin: 12px 0;
+    background-color: rgb(83, 83, 82);
+
+}
+
+/* ---------------------------------------------- */
+.title {
+    height: 54px;
+    width: 100%;
+
+    padding: 0px 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.tweet-section {
+    display: flex;
+
+    padding: 0px 16px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tweet-profile {
+    width: 48px;
+    height: 108px;
+
+    padding-top: 4px;
+    margin-right: 12px;
+
+    /* background-color: coral; */
+}
+
+.write-tweet {
+    flex: 1;
+    /* background-color: rgb(80, 200, 255); */
+}
+
+.profile-image {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: azure;
+}
+
+input[type='text'] {
+    width: 100%;
+    height: 52px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.icon-section {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+
+}
+
+.feed {
+    flex: 1;
+    /* background-color: chocolate; */
+}
+
+.tweed {
+    display: flex;
+
+    padding: 0 16px;
+    padding-top: 12px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* background-color: palevioletred; */
+}
+
+.tweed-content {
+    flex: 1;
+    position: relative;
+    /* border: solid; */
+    /* background-color: rgb(53, 59, 59); */
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.name>span {
+    opacity: 0.5;
+}
+
+.text-content {
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.tweed-photo {
+    width: 408px;
+    height: 510px;
+
+    margin-top: 12px;
+
+    border-radius: 16px;
+
+    background-color: antiquewhite;
+}
+
+.action-group {
+    width: 408px;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 12px 0;
+
+
+}
+
+.action-number {
+    margin-left: 12px;
+    color: white;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.more-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: 0;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    /* background-color: azure; */
+
+    transition: all 0.3s;
+}
+
+.more-button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.trend-contoiner,
+.account-contoiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 16px;
+    background-color: #16181C;
+}
+
+.account-contoiner {
+    margin-top: 12px;
+}
+
+.trend,
+.account {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 82px;
+    padding: 12px 16px;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    /* background-color: aquamarine; */
+}
+
+.account {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 72px;
+
+}
+
+.trend>span:nth-child(3),
+.account-name>span:first-child {
+
+    font-weight: bold;
+    color: aliceblue;
+    font: 16px;
+}
+
+.account-name>span:first-child>img {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+h2 {
+    color: aliceblue;
+    padding-left: 16px;
+}
+
+.show-more {
+    padding: 16px;
+    color: rgb(29, 155, 248);
+}
+
+.account-name {
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    margin-left: 12px;
+    justify-content: space-between;
+
+    /* background-color: aqua; */
+}
+
+.follow-btn {
+    width: 77px;
+    height: 32px;
+
+    padding: 0px 16px;
+    border: none;
+    border-radius: 16px;
+
+    font-weight: bold;
+
+    /* margin-left: auto; */
+}
+
+.account-section {
+    display: flex;
+
+    align-items: center;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+
+    margin-top: 24px;
+}
+
+.footer>a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 4px;
+}
